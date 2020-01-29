@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<title>Expresso do café - Sachês</title>
+<meta charset="utf-8"> 
+<link rel="stylesheet" type="text/css" href="css.css">
+<script>
+lista = new Array() 
+lista[0] = ["Expresso - R$ 24,00", "Descafeinado - R$ 21,00"];
+lista[1] = ["Clássico 120g - R$ 14,00", "Intenso 120g - R$ 14,00"];
+lista[2] = ["Livanto - R$ 35,00", "Ristretto - R$ 42,00", "Vanilio - R$46,00"];
+
+fotos = new Array()
+fotos[0] = ["CapsulaDulceGusto.jpg"];
+fotos[1] = ["SacheSenseo.jpg"];
+fotos[2] = ["CapsulaNespresso.jpg"];
+
+h2h3 = new Array ()
+h2h3[0] = ["Dolcegusto", "Senseo", "Nespresso"];
+h2h3[1] = ["Caixa 16 capsulas","18 sachês","20 capsulas"];
+
+function mostrapaginas (nd){
+var janela = window.open ( " ", "", "width=280, height=430, location=no, status=no");
+with (janela) {
+document.write("<html><head><title>Sachês</title>");
+document.write("<link rel='stylesheet' type='text/css' href='css.css'>");
+document.write("<meta charset='utf-8'>");
+document.write("</head><body background='Fundo.jpg'>");
+document.write("<h2 align=center>" + h2h3[0][nd] + "</h2>");
+document.write("<h3 align=center>" + h2h3[1][nd] + "</h3>");
+document.write("<center><img src='" + fotos[nd] + "'></center>");
+for (i=0; i < lista[nd].length; i++)  
+document.write("<ul><li>" + lista[nd][i] + "</li></ul>");
+document.write('<div align=center><button onclick="window.close()">Fechar</button></div>');
+document.write("</body></html>");
+	}
+}
+
+</script>
+</head>
+<body background="Fundo.jpg">
+<header>
+<img src="Logo_Pequeno.png" class=imgLogo>
+<address class=ender>Avenida Mochaccino,10<br>
+Tel: (21) 1234-5678 <br>
+<a href="mailto:contato@coffe.com.br" class=class1>contato@coffe.com.br</a></address>
+</header>
+<nav>
+<ul type=circle>
+<li><a href="ExpressoCafe.html" target="_blank" class=class1>Inicial</a></li>
+<li><a href="historia.html" target="_blank" class=class1>História</a></li>
+<li><a href="maquinas.html" target="_blank" class=class1>Máquinas</a></li>
+<li><a href="saches.html" target="_blank" class=class1>Saches</a></li>
+<li><a href="compras.html" target="_blank" class=class1>Compras</a></li>
+</ul>
+</nav>
+<section>
+<H2>Sachês de café Expresso</H2>
+<ol>
+<a href="javascript:mostrapaginas(0);" class=class1>
+<li>Dolce Gusto</li></a>
+<a href="javascript:mostrapaginas(1)" class=class1>
+<li>Senseo</li></a>
+<a href="javascript:mostrapaginas(2)" class=class1>
+<li>Nespresso</li></a>
+</section>
+</body>
+</html>

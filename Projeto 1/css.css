@@ -1,0 +1,124 @@
+body {   color:#FFEEBB;
+	   font-size:16px;
+	   font-family:verdana,liberation;
+		}
+a:link {color:#FFEEBB; 
+		text-decoration:none;
+		}
+a:visited {color:#DDCC99;
+		   text-decoration:none;
+		}
+.fonte { float:right;
+		font-style:italic
+		}
+header { display:block; margin-bottom: 1px;
+		}
+nav   { display:block; width: 20%; float:left; 
+		}
+section {display:block; width: 77%; float:right;
+		}
+
+ul ,ol { line-height:200%
+		}
+form   { float: right;
+		}
+fieldset  { background-color:#907968;
+		}
+textarea  { width:200px;
+	     height:80px;
+		}
+label1  {  display:block;
+		float:left;
+		width:90px;
+		}
+label2  {	display:block;
+		width:70px;
+		padding-left:28px;
+		}	
+textarea  {width:200px;
+		height:80px;
+		}
+td, th { border: solid 2px;
+			 color:#664422;
+			 padding: 6px 12px 6px 12px;
+			 }
+#linTH {     border:2px solid #573218;
+			 color:#FFFFFF;
+			 background-color:#907968;
+			 vertical-align:middle;
+			 text-align:center;
+			 }
+#colTH  { color:#573218;
+			  background-color:#EACEAC;
+			  text-align:left;
+			  }
+#preco   { border:2px solid #573218;
+		color:#CC0000;
+			  font-weight:bold;
+			  vertical-align:middle;
+				}
+.ender { float:right;
+		font-size:16px;
+		line-height:150%;
+		}
+.imgLogo {border-bottom-width:,3px;
+		 padding-bottom:15px;
+		 margin-bottom:6px;
+		 border-bottom-style: solid;
+		}
+.apres    { text-align:center;		
+		}
+.imgesq  { float:left;
+		  margin: 12px 12px 4px 0px;
+		  }
+.imgdir { float:right;
+		  margin: 12px 0px 4px 12px;
+			}
+.historia { text-align:justify;
+			}
+.tabinfo  { border-collapse: collapse;
+		   margin-top: 6px;
+		   background-color:#FFFFFF;
+		   color:#573218;
+		   font-family: arial,ubuntu;
+		   }
+
+.fsForm { clear: both;
+		  width:524px;
+		  
+		 }
+.fsResDir { float:rigth;
+			width:280px;
+			height:280px;
+			}
+.fsResEsq  {width:200px;
+			height:280px;
+			float:left;
+			}
+.text1     {float: left;
+		 display: block;
+		 width: 90px;
+			}
+.text2     {float: left;
+		 display: block;
+		 width:70px;
+		 margin-left:28px;	
+			}
+.larg22    {width:22px;
+			}
+.larg44    {width:44px;
+			}
+.larg80   {width:80px;
+		 float:right;
+			}
+.larg120  {width:120px;
+		  float:left;
+			}
+.larg200  {width:200px;
+		  float:left;
+			}
+.larg420   {width:420px;
+		  float:left;
+			}
+.botao      {float:right;
+			}

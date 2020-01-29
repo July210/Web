@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<title>Expresso do café - Máquinas</title>
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script type="text/javascript">
+	function trocaPreIm(i){
+	valores = new Array ()
+	valores [0] = ["340,00"];
+	valores [1] = ["300,00"];
+	valores [2] = ["400,00"];
+	valores [3] = ["230,00"];
+	
+	document.getElementById("preco1").innerHTML=valores[i];
+	
+	fotos = new Array ()
+	fotos [0] = ["Dulce_GustoP.jpg"];
+	fotos [1] = ["Nespresso_InissiaP.jpg"];
+	fotos [2] = ["Nespresso_C50P.jpg"];
+	fotos [3] = ["SenseoP.jpg"];
+	
+	document.getElementById("foto1").src=fotos[i];
+   }
+</script>
+</head>
+<body background="Fundo.jpg">
+<header >
+<img src="Logo_Pequeno.png" class=imgLogo> 
+<address class=ender>Avenida Mochaccino,10<br>
+Tel: (21) 1234-5678 <br>
+<a href="mailto:contato@coffe.com.br" class=class1>contato@coffe.com.br</a></address>
+</header>
+<nav>
+<ul>
+<li><a href="ExpressoCafe.html" target="_blanck" class=class1>Inicial</a></li>
+<li><a href="historia.html" target="_blanck2" class=class1>História</a></li>
+<li><a href="maquinas.html" target="_blanck3" class=class1>Máquinas</a></li>
+<li><a href="saches.html" target="_blanck4" class=class1>Saches</a></li>
+<li><a href="compras.html" target="_blanck5" class=class1>Compras</a></li>
+</ul>
+</nav>
+<section>
+<table class=tabinfo >
+<tr >
+<th colspan=4 id=linTH>Máquinas de Café</th>
+</tr>
+<tr>
+<th id=linTH>Tipo</th>
+<th id=linTH>Modelo</th>
+<th id=linTH>Foto</th>
+<th id=linTH>Preço</th>
+</tr>
+<tr>
+<th id=colTH>Dolce Gusto</th>
+<td id=colTH> <a href="#" onclick="trocaPreIm(0)" class=class2> Piccolo</a></td>
+<td rowspan=4><img src="Vazio.jpg" id="foto1"></td>
+<th id="preco1" rowspan=4 ></th>
+</tr>
+<tr>
+<th rowspan=2 id=colTH>Nespresso</th>
+<td id=colTH><a href="#" onclick="trocaPreIm(1)" class=class2>Inissia C40</a></td>
+</tr>
+<tr>
+<td id=colTH><a href="#" onclick="trocaPreIm(2)" class=class2>U C50</a></td>
+</tr>
+<tr>
+<th id=colTH>Senseo</th>
+<td id=colTH><a href="#" onclick="trocaPreIm(3)" class=class2>HD7811/96</a></td>
+</tr>
+</table>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

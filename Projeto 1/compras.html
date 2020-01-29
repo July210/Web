@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<title>Expresso do Café - Formulário</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body background="Fundo.jpg">
+<header>
+<img src="Logo_Pequeno.png" class=imgLogo> 
+<address class=ender>Avenida Mochaccino,10<br>
+Tel: (21) 1234-5678 <br>
+<a href="mailto:contato@coffe.com.br" >contato@coffe.com.br</a></address>
+</header>
+<nav>
+<ul>
+<li><a href="ExpressoCafe.html" target="_blanck">Inicial</a></li>
+<li><a href="historia.html" target="_blanck2">História</a></li>
+<li><a href="maquinas.html" target="_blanck3">Máquinas</a></li>
+<li><a href="saches.html" target="_blanck4">Saches</a></li>
+<li><a href="compras.html" target="_blanck5">Compras</a></li>
+</ul>
+</nav>
+<section>
+<form method="post">
+<fieldset class=fsForm>
+<legend>Dados de Identificação</legend>
+<br>
+<label for="nome" class=text1>Nome: </label>
+<input type="text" id="nome" name="textonome" class=larg200>
+<label for="cpf" class=text2>CPF: </label> 
+<input type="text" id="cpf" name="textocpf" class=larg120>
+<br>
+<br>
+<label for="tel" class=text1>Telefone: </label>
+<input type="text" id="tel" name="textotel" class=larg120>
+<label for="email" class=text2>Email: </label>
+<input type="text" id="email" name="textoemail" class=larg200>
+<br>
+<br>
+<label for="endere" class=text1>Endereço: </label>
+<input type="text" size="40" id="endere" name="textoendere" class=larg420>
+</fieldset>
+<fieldset class=fsResEsq>
+<legend>Produtos</legend>
+<br>
+Máquinas: <select name="maquinas">
+<option value="defaut">--
+<optgroup label="Dolce Gusto">
+<option value="Piccolo"> Piccolo
+</optgroup>
+<optgroup label="Nespresso">
+<option value="Inissia C40">Inissia C40
+<option value="Uc50">U C50
+</optgroup>
+<optgroup label="Senseo">
+<option value="HD7811/96">HD7811/96
+</optgroup>
+</select>
+<br>
+<br>
+Sachês: <select name="saches">
+<option value="defaut">--
+<optgroup label="Dolce Gusto">
+<option value="expresso">Expresso
+<option value="descafeinado">Descafeinado
+</optgroup>
+<optgroup label="Nespresso">
+<option value="livanto">Livanto
+<option value="ristretto">Ristretto
+<option value="vanilio">Vanilio
+</optgroup>
+<optgroup label="Senseo">
+<option value="classico">Clássico
+<option value="intenso">Intenso
+</optgroup>
+</select>
+<br>
+<br>
+Selecionados: <input type="reset" value="Remover">
+<br>
+<br>
+<textarea name=selec ></textarea>
+<br>
+Valor: <input type="text" class=larg80 readondly>
+</fieldset>
+<fieldset class=fsResDir>
+ <legend>Forma de Pagamento</legend>
+<br>
+<input type="radio" name=pagamento value=cartão>Cartão 
+<input type="radio" name=pagamento value=cheque >Cheque 
+<input type="radio" name=pagamento value=dinheiro>Dinheiro
+<br>
+<br>
+<fieldset>
+<legend>Dados do Cartão</legend>
+<br>
+<input type="radio" name=cartao value=visa>
+<label for="visa"><img src="visa.png"></label>
+<input type="radio" name=cartao value=master>
+<label for="master"><img src="master.png"></label>
+<input type="radio" name=cartao value=amex>
+<label for="amex" ><img src="amex.png"></label>
+<br>
+<br>
+<label for="Valid" class=text1>Validade: </label>
+<input type="text" id="Valid" name="Valid1" class=larg22>
+/ <input type="text" class=larg44>
+<br>
+<br>
+<label for="nume" class=text1>Número: </label>
+<input type="text" id="nume" name="nume1" class=larg120>
+</fieldset>
+</fieldset>
+<p class=botao>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+</p>
+</form>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
